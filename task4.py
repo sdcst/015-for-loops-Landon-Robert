@@ -23,3 +23,14 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+x = int(input("\nEnter number of months: "))
+mtotal = 0
+gtotal = 0
+for i in range(x):
+    pu = float(input(f"\nEnter total purchases for month({i+1}): "))
+    pa = float(input(f"Enter total payments for month({i+1}): "))
+    gtotal = gtotal + pu - pa
+    interest = round(0.02*gtotal, 2)
+    print("2%" + " interest charged: $" + str(interest))
+    gtotal = gtotal + interest
+    print(f"Your closing balance is ${gtotal}")

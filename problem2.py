@@ -37,3 +37,6 @@ example:
 Enter a number: -4
 Invalid input
 """
+x = int(input("Enter a positive integer: "))
+
+for i in range() 

@@ -22,3 +22,6 @@ enter a number:4
 ****
 
 """
+w = int(input("\nEnter a width: "))
+l = int(input("Enter a length: "))
+for i in range(l): print("*" * w)

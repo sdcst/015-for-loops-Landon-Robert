@@ -14,3 +14,16 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+total = 0.0
+for i in range(5):
+    x = int(input("\nEnter a number: "))
+    total = total + x 
+else:
+    print(f"Your subtotal is {total}")
+    pst = round(total * 0.07, 2)
+    gst = round(total * 0.05, 2)
+    print(f"Your PST is {pst}")
+    print(f"Your PST is {gst}")
+    gtotal = total + pst + gst
+    print(f"Your total is {gtotal}")
+
